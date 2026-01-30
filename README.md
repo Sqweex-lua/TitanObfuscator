@@ -13,7 +13,7 @@ TITAN OBFUSCATOR is a professional Java bytecode-level source code protection to
 ## 🛠 Installation
 
 ```bash
-git clone [https://github.com/yourusername/titan-obfuscator.git](https://github.com/Sqweex-lua/TitanObfuscator.git)
+git clone https://github.com/Sqweex-lua/TitanObfuscator.git
 cd titan-obfuscator
 ```
 
