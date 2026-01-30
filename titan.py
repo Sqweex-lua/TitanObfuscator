@@ -5,8 +5,8 @@ import sys
 
 class IIOIOOIIO:
     def __init__(self):
-        self.alphabet = ['l', 'I', 'i', '1', '_', 'O', '0']
-        self.junk_templates = self.IOIOIIO()
+        self.bobs = ['l', 'I', 'i', '1', '_', 'O', '0']
+        self.trash = self.IOIOIIO()
         
     def IOIOIIO(self):
         return [
@@ -22,8 +22,8 @@ class IIOIOOIIO:
 
 class OOIIOIO:
     def __init__(self, decoder_name, pool_name):
-        self.decoder_name = decoder_name
-        self.pool_name = pool_name
+        self.decoder = decoder_name
+        self.pool = pool_name
         self.string_pool = []
 
     def IOIO(self, text):
@@ -40,10 +40,10 @@ class OOIIOIO:
             pool_init += f"        new int[]{{{','.join(map(str, entry['data']))}}},\n"
         
         return f"""
-    private static final int[][] {self.pool_name}_d = {pool_init} }};
-    private static String {self.decoder_name}(int idx, int salt) {{
+    private static final int[][] {self.pool}_d = {pool_init} }};
+    private static String {self.decoder}(int idx, int salt) {{
         try {{
-            int[] d = {self.pool_name}_d[idx];
+            int[] d = {self.pool}_d[idx];
             int k = 0, o = 0;
             switch(idx) {{
                 {self.OIOI()}
