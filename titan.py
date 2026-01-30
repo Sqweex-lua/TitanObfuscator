@@ -18,7 +18,7 @@ class IIOIOOIIO:
         ]
 
     def OIOIOO(self, length=18):
-        return 'l' + ''.join(random.choice(self.alphabet) for _ in range(length))
+        return 'l' + ''.join(random.choice(self.bobs) for _ in range(length))
 
 class OOIIOIO:
     def __init__(self, decoder_name, pool_name):
